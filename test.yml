@@ -1,0 +1,23 @@
+openapi: '3.0.0'
+info:
+  title: 'TEST'
+  description: 'API endpoints for Phase I integration.'
+  version: '0.1'
+paths:
+  /test:
+    post:
+      summary: 'test'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: 'object'
+              properties:
+                id:
+                  type: 'string'
+                name:
+                  type: 'string'
+      responses:
+        '201':
+          description: success'
